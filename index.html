@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
@@ -13,13 +14,22 @@
     <header>
       <div class="content">
         <a href="index.html" class="logo"> Fotomat</a>
-        <nav>
+        <nav class="desktop">
           <ul>
-            <li>Product detail</li>
-            <li>About us</li>
-            <li>Follow us <img class="icon" src="./resources/images/instagram.png" alt=""></li>
+            <li><a href="#">Product detail</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Follow us <img class="icon" src="./resources/images/instagram.svg" alt=""></a></li>
+            <li><button class = "joinUs">Join us</button></li>
           </ul>
         </nav>
+          <nav class="mobile">
+          <ul>
+            <li><a href="#"><img src="./resources/images/ic-logo.svg" alt=""></a></li>
+            <li><a href="#"><img src="./resources/images/ic-product-detail.svg" alt=""></a></li>
+            <li><a href="#"><img src="./resources/images/ic-about-us.svg" alt=""></a></li>
+            <li><button class = "joinUs">Join us</button></li>
+          </ul>
+          </nav>
       </div>
     </header>
     <main>
@@ -31,23 +41,27 @@
               <h1>FORMAT CAMERA</h1>
             </div>
             <p class="email">Email us to request a demo and be in our waiting list for <strong>February 2017</strong> release!</p>
-            <button>Join the waiting list</button>
+            <button class="desktop-joinUs">Join the waiting list</button>
           </div>
         </div>
       </div>
       <div class="featureSection">
         <div class="feature">
-          <img src="./resources/images/feature-1.png" alt="feature 1">
-          <div class="description">
-            <h2>Advanced, automatic, instant</h2>
-            <h3>Shutter speed, apperture and flash output adjust automatically</h3>
+          <div class="center">
+            <img src="./resources/images/feature-1.png" alt="feature 1">
+            <div class="description">
+              <h2>Advanced, automatic, instant</h2>
+              <h3>Shutter speed, apperture and flash output adjust automatically</h3>
+            </div>
           </div>
         </div>
         <div class="feature">
-          <img src="./resources/images/feature-2.png" alt="feature 2">
-          <div class="description">
-            <h2>Beautifully crafted inside-out</h2>
-            <h3>From the paint outside to the tiny screw inside, Fotomatic is crafted with love and 20-year of expertise</h3>
+          <div class="center">
+            <img src="./resources/images/feature-2.png" alt="feature 2">
+            <div class="description">
+              <h2>Beautifully crafted inside-out</h2>
+              <h3>From the paint outside to the tiny screw inside, Fotomatic is crafted with love and 20-year of expertise</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -55,10 +69,7 @@
         <h2>Over 20+ filters to choose from</h2>
         <h3>Feed your creativity with 20 different filter designed by our eclectic in-house photographers!</h3>
         <div class="photos">
-          <img src="./resources/images/filter-1.png" alt="filter">
-          <img src="./resources/images/filter-2.png" alt="filter">
-          <img src="./resources/images/filter-3.png" alt="filter">
-          <img src="./resources/images/filter-4.png" alt="filter">
+          <img src="./resources/images/filter-1.png" alt="filter"><img src="./resources/images/filter-2.png" alt="filter"><img src="./resources/images/filter-3.png" alt="filter"><img src="./resources/images/filter-4.png" alt="filter">
         </div>
       </div>
       <div class="quotes-section">

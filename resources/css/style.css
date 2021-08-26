@@ -23,8 +23,22 @@ header{
     }
 li{
         display: inline-flex;
-        padding-left: 40px;
+        padding-left: 3.5rem;
+        color: #4a4a4a;
     }
+.desktop li:last-child{
+    display: none;
+}
+.mobile{
+    display: none;
+}
+.joinUs{
+    background-color: #9DC20A;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+    border: none;
+}
 main{
     padding-top: 5.3125rem;
 }
@@ -65,7 +79,7 @@ h1{
     font-size: 20px;
     margin-bottom: 1.625rem;
 }
-button{
+.desktop-joinUs{
     width: 408px;
     height: 64px;
     background-color: #4A4A4A;
@@ -74,6 +88,7 @@ button{
     font-size: 20px;
     font-family:"Roboto";
     line-height: 1.4;
+    border: none;
 }
 .featureSection{
     display: flex;
@@ -83,13 +98,19 @@ button{
 .feature:first-child{
     margin-right: 2.375rem;
 }
+.imgContent{
+
+}
 .feature{
     height: 39.6875rem;
     background-color: white;
 }
+.center{
+    padding: 2rem 2rem 0 2rem;
+}
 .feature img{
     max-width: 100%;
-    padding: 2rem 2rem 2.5rem 2rem;
+    padding-bottom: 2.5rem;
     box-sizing: border-box;
 }
 .description{
@@ -155,15 +176,125 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 32px;
 }
 footer span{
     color: white;
     font-size: 0.75rem;
     font-family: "Roboto";
-    padding: 0 2rem 0 2rem;
 }
-@media screen and (min-width: 900px) {
-    footer{
+@media screen and (min-width: 600px) and (max-width: 1200px){
+    .desktop li:last-child{
+        display: inline-flex;
+    }
+    .sign-up{
+        height: 70vh;
+    }
+
+}
+@media screen and (max-width:1200px){
+    .sign-up{
+        justify-content: center;
+    }
+    .text_center{
+        margin-left: 0;
+    }
+    .sign-up-cta{
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+    .feature{
+        height: 35rem;
+    }
+    .email{
         display: none;
     }
+    .sign-up-cta button{
+        display: none;
+    }
+}
+@media screen and (max-width: 620px){
+    .logo{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        width: 100%;
+    }
+    .mobile ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .mobile li{
+        padding: 0;
+    }
+    .content{
+        padding: 0;
+
+    }
+    .sign-up{
+        height: 23.5rem;
+    }
+    .featureSection{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .feature:first-child{
+        background-color: #f3f3f3;
+        margin: 0;
+    }
+
+    .feature{
+        height:fit-content;
+        padding:0 0 30px 0;
+    }
+    .description h2{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    .description h3{
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .filterSection h2{
+        font-size: 1.125rem;
+        line-height: 1.3;
+        font-weight: normal;
+        padding-top: 2rem;
+    }
+    .filterSection h3{
+        font-size: .875rem;
+        line-height: 1.4;
+        padding: 0 15px;
+    }
+    .photos{
+        padding: 2rem 0 0.1rem 0;
+    }
+    .photos img {
+        width: 33.33333%;
+    }
+    .photos img:last-child{
+        display: none;
+    }
+    .quotes-section{
+        flex-wrap: wrap;
+        padding: 1rem 1.5rem;
+    }
+    .quote{
+        font-size: 24px;
+        line-height: 1.4;
+        padding: 0 0 15px 0;
+    }
+    footer{
+        padding: 0 15px;
+    }
+    footer span:first-child{
+        font-size: 10px;
+}
 }
