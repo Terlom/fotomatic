@@ -43,7 +43,7 @@ main{
   padding-top: 5.3125rem;
 }
 .banner{
-  background-image: url("app/img/src/banner-landingpage.jpg");
+  background-image: url("../imgs/banner-landingpage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -52,7 +52,7 @@ main{
   align-items: center;
   height: 43.5rem;
 }
-.text_center{
+.sign-up_container{
   margin-left: 6.25rem;
 }
 .sign-up-cta{
@@ -198,7 +198,7 @@ footer{
   .sign-up{
     justify-content: center;
   }
-  .text_center{
+  .sign-up_container{
     margin-left: 0;
   }
   .sign-up-cta{
@@ -278,6 +278,7 @@ footer{
   }
   .photos img {
     width: 33.33333%;
+
   }
   .photos img:last-child{
     display: none;
@@ -293,8 +294,8 @@ footer{
   }
   footer{
     padding: 0 15px;
-  }
-  footer span:first-child{
-    font-size: 10px;
+    span:first-child{
+      font-size: 10px;
+    }
   }
 }

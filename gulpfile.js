@@ -23,14 +23,7 @@ function startwatch() {
     // Мониторим файлы препроцессора на изменения
     watch('app/scss/**/*.scss', styles);
 }
-function buildcopy() {
-    return src([ // Выбираем нужные файлы
-        'app/css/**/*.css',
-        'app/images/**/*',
-        'app/**/*.html',
-    ], { base: 'app' }) // Параметр "base" сохраняет структуру проекта при копировании
-        .pipe(dest('public')) // Выгружаем в папку с финальной сборкой
-}
+
 
 function images() {
     return src('app/imgs/src/**/*')
@@ -42,4 +35,3 @@ function images() {
 exports.styles = styles;
 exports.images = images;
 exports.watch = startwatch;
-exports.buildcopy =
